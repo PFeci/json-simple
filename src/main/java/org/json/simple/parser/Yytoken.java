@@ -53,7 +53,7 @@ public class Yytoken {
 			sb.append("END OF FILE");
 			break;
 		default:
-+			console.log('Unknown type');
++			throw new IllegalStateException("Unknown type");
 		}
 		return sb.toString();
 	}
